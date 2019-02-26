@@ -1,0 +1,7 @@
+*.env
+*.pyc
+env/
+*.vscode
+.vscode/
+*.dll
+*.def
