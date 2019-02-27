@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">    
 </head>
 <body id="body-overrides">
+    <div class="container" id="title">
+        <div class="jumbotron" id="jumbotron-overrides">
+            <a id="Election Finder" href="{% url 'elections:election_form'%}"> Election Finder</a>
+        </div>
+    </div>
     {% block index %}
     {% endblock %}
 </body>
