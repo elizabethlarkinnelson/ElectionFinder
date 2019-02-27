@@ -1,1 +1,12 @@
-<h1>HI</h1>
+{% extends "./base.html" %}
+
+{% block index %}
+
+<form action="/elections/result/" method="post">
+    {% csrf_token %}
+    <label for="state">State: </label>
+    <input id="state" type="text" name="state">
+    <input type="submit" value="OK">
+</form>
+
+{% endblock %}
