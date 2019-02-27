@@ -1,4 +1,15 @@
-<h1>You're here!</h1>
-{{state}}
-{{place}}
-{{s}}
+{% extends "./base.html" %}
+
+{% load static %}
+
+{% block index %}
+
+<div class="container">
+    <div class="row" id="address">
+        <h1>{{Message}} {{place}} {{state}}</h1>
+        <h1> {{date}} {{election_info}} </h1>
+        <h1>{{sorry}}</h1>
+    </div>
+</div>
+
+{% endblock %}
