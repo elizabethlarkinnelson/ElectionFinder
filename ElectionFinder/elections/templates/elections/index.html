@@ -1,12 +1,16 @@
 {% extends "./base.html" %}
+{% load static %}
 
 {% block index %}
 
-<form action="/elections/result/" method="post">
-    {% csrf_token %}
-    <label for="state">State: </label>
-    <input id="state" type="text" name="state">
-    <input type="submit" value="OK">
-</form>
+<div class="container">
+    <div class="row" id="address">
+        <form action="/elections/" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
 
 {% endblock %}
